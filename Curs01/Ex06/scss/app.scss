@@ -21,14 +21,58 @@
   @include square();
 }
 
-.squares-magenta {
+.square-magenta {
   @include square-bg(magenta);
 }
 
-.squares-peru {
+.square-peru {
   @include square-bg(peru);
 }
 
-.squares-purple {
+.square-purple {
   @include square-bg(purple);
+}
+
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+@mixin circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid red;
+  background-color: purple;
+}
+
+.circle {
+  @include circle();
+}
+
+@mixin circle-bg($circle-bg: purple) {
+  background-color: $circle-bg;
+}
+
+.circle-red {
+  @include circle-bg(red);
+}
+
+.circle-green {
+  @include circle-bg(green);
+}
+
+.circle-blue {
+  @include circle-bg(blue);
+}
+
+@mixin circle-border($width: 3px, $color: red) {
+  border: $width solid $color;
+}
+
+.circle-border-blue {
+  @include circle-border(4px, blue);
 }
