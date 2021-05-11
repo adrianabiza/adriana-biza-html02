@@ -16,6 +16,15 @@
   }
 }
 
+$size: 150px;
+@for $i from 1 through 5 {
+  .box-0#{$i} {
+    width: $size;
+    height: $size;
+  }
+  $size: $size + 5px;
+}
+
 @for $i from 1 through 5 {
   @if $i%2 == 1 {
     .box-#{$i}0 {

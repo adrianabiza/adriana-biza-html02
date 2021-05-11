@@ -4,8 +4,18 @@
   }
 }
 
+@mixin mq-sm-up {
+  @media (min-width: 501px) {
+    @content;
+  }
+}
+
 .box-2 {
   @include mq-sm-down() {
     display: none;
+  }
+
+  @include mq-sm-up() {
+    background-color: green;
   }
 }
