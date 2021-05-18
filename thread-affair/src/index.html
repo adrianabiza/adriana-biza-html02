@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Welcome to the Pixellab Builder</title>
+</head>
+
+<body>
+  <header class="header">
+    <%= require('html-loader!./html/header.html')%>
+  </header>
+
+  <main class="main">
+    <% require('html-loader!./html/homepage/main.html') %>
+  </main>
+
+  <footer class="footer">
+    <%= require('html-loader!./html/footer.html')%>
+  </footer>
+</body>
+
+</html>
