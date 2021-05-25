@@ -11,7 +11,8 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 
 // boostrap
 @import '~bootstrap/scss/bootstrap-reboot';
-@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/bootstrap-utilities';
+@import '~bootstrap/scss/bootstrap-grid';
 
 //common
 @import './reset';
@@ -21,3 +22,6 @@ body {
   font-family: 'Roboto', 'sans-serif';
   color: $gray-primary;
 }
+
+@import './shared/index';
+@import './homepage/index';
